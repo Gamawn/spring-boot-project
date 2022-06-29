@@ -2,6 +2,7 @@ package kz.fastjava.springbootproject.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
@@ -12,6 +13,7 @@ import java.util.Objects;
 @Table(name = "task", schema = "tasklist")
 @Getter
 @Setter
+@ToString
 public class TaskEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

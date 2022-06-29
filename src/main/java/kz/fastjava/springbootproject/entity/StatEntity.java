@@ -3,6 +3,7 @@ package kz.fastjava.springbootproject.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
@@ -13,6 +14,7 @@ import java.util.Objects;
 @NoArgsConstructor
 @Setter
 @Getter
+@ToString
 public class StatEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id @Column(name = "id", nullable = false)
